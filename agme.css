@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.fondo{
+    background-color: #5472D3;
+}
+.container{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "NAV NAV NAV NAV NAV"
+      "MAIN MAIN MAIN MAIN MAIN"
+      "MAIN MAIN MAIN MAIN MAIN"
+      "FOOTER FOOTER FOOTER FOOTER FOOTER";
+}
+.Botones{
+    font-size: 1.3rem;
+
+}
+      
+.NAV {
+    background-color: #002171;
+     grid-area: NAV;
+}
+      
+.MAIN{
+    color: #000000;
+    grid-area: MAIN;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+}
+.MAIN div p{
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    display: flex;
+}
+.MAIN img{
+    display: flex;
+    max-width: 50rem;
+    margin-left: 2rem; 
+}
+      
+.FOOTER {
+     grid-area: FOOTER;
+     background-color:#002171;
+     border: solid 2px black
+}
+      
+.Logo1{
+    margin-top: 10px;
+    margin-left: 43%;
+    border-radius: 10%;
+
+}
+
+.Botones li{
+    font-size: 23px;
+    display: inline-block;
+    margin: 10px;
+    padding-left: 110px;
+    padding-right:3px;
+    
+}
+
+.ListaFooter{
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 7px;
+    margin: 5px;
+}
+.botonesFooter{
+    border: solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 100px;
+    display: inline;
+    color: black;
+    background-color: #fff9c4;
+}
+
+.nombre{
+    margin-top: 10px;
+}
+.main{
+    background-color: #5472d3;
+}
+.title{
+    color: white;
+    font-size: 55px;
+    font-style: inherit;
+}
+.listaServicios{
+    color: white;
+    background-color:#0d47a1;
+    font-size: 35px;
+    font-style: oblique;
+    margin-top: 5px;
+    margin-right: 600px;
+    border-style: double;
+    border-color: black;
+}
+.tabla{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    text-align: center;
+    background-color: #0d47a1;
+    margin-left: 200px;
+    border: radius 50%;
+    border-style: double 10px black;
+}
+
+
+.paginaProductos {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "NAV NAV NAV NAV"
+      "MAINproductos MAINproductos MAINproductos MAINproductos"
+      "FOOTER FOOTER FOOTER FOOTER";
+  }
+    
+  .MAINproductos { 
+      grid-area: MAINproductos;
+      display: flex;
+      margin-right: 2rem;
+      flex-wrap: wrap;
+ }
+  
+
+  
+ @media (max-width: 768px){
+    .container{
+        grid-template-areas:
+        "NAV NAV NAV NAV"
+        "MAINproductos MAINproductos MAINproductos MAINproductos "
+        "MIANproductos MAINproductos MAINproductos MAINproductos"
+        "FOOTER FOOTER FOOTER FOOTER";
+    }
+    }
+    .MAINproductos{
+        display: grid;
+        font-size: 3rem;
+    }
+    .nav{
+        flex-direction: row;
+    }
+    .nav ul{
+        display: flex;
+    }
+
+
+
+
+
+@media (max-width: 768px){
+    .container{
+        grid-template-areas:
+        "NAV NAV NAV NAV NAV"
+        "NAV MAIN MAIN MAIN MAIN"
+        "NAV MAIN MAIN MAIN MAIN"
+        "FOOTER FOOTER FOOTER FOOTER FOOTER";
+    }
+    .MAIN img{
+        margin-left: 6.5rem;
+    }
+    .MAIN{
+        display: grid;
+    }
+    .nav{
+        flex-direction: row;
+    }
+    .nav ul{
+        display: flex;
+    }
+}
