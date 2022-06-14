@@ -119,6 +119,13 @@
     border-style: double 10px black;
 }
 
+.LogoFooter{
+    animation-name: Animacion-de-footerLogo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
 
 .paginaProductos {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -137,9 +144,6 @@
       margin-right: 2rem;
       flex-wrap: wrap;
  }
-  
-
-  
  @media (max-width: 768px){
     .container{
         grid-template-areas:
@@ -160,7 +164,13 @@
         display: flex;
     }
 
-
+@keyframes Animacion-de-footerLogo{
+0%{width: auto;}
+25%{width: auto;}
+50%{width: auto;}
+100%{width: auto;
+    border: solid #000000;}
+}
 
 
 
